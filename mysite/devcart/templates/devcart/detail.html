@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    {{material_type}}
+
+          {% for dress in material.dress_set.all %}
+            {{dress.dress_name}}
+            {{dress.dress_color}}
+            {{dress.dress_detail}}
+            <br>
+
+
+          {% endfor %}
+
+  </body>
+</html>

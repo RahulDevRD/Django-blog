@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>
+
+    {% if material_list %}
+      <ul>
+        {% for material in material_list %}
+          <li>
+            {{ material.material_type }}
+            <img src="{{ material.dress_image.url }}">
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </body>
+</html>
